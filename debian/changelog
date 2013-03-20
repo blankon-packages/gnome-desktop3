@@ -1,3 +1,30 @@
+gnome-desktop3 (3.7.91.1-1blankon1) suroboyo; urgency=low
+
+  * New upstream release
+
+ -- Mahyuddin Idram Ahmad <dotovr@di.blankon.in>  Wed, 20 Mar 2013 16:11:29 +0700
+
+gnome-desktop3 (3.7.91.1-1) experimental; urgency=low
+
+  [ Jeremy Bicha ]
+  * New upstream release
+    - soname bump, update symbols
+  * debian/control.in:
+    - Build-depend on libgl1-mesa-dev and iso-codes
+    - Bump minimum glib
+
+  [ Emilio Pozuelo Monfort ]
+  * debian/control.in:
+    + Add missing replaces on libgnome-desktop-3-4.
+    + gir1.2-gnomedesktop-3.0 breaks gnome-shell (<< 3.7.90),
+      as it loads libgnome-desktop-3.so.7 while old gnome-shell
+      loads the old SONAME, making shell explode.
+  * New upstream release.
+    + debian/libgnome-desktop-3-7.symbols:
+      - Updated for removed symbols.
+
+ -- Sjoerd Simons <sjoerd@debian.org>  Mon, 18 Mar 2013 20:44:24 +0100
+
 gnome-desktop3 (3.6.1-1blankon1) suroboyo; urgency=low
 
   * Upload to suroboyo 
