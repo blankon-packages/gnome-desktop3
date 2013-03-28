@@ -7,7 +7,7 @@ Source: gnome-desktop3
 Section: gnome
 Priority: optional
 Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Uploaders: Michael Biebl <biebl@debian.org>, Sjoerd Simons <sjoerd@debian.org>
+Uploaders: Emilio Pozuelo Monfort <pochu@debian.org>, Michael Biebl <biebl@debian.org>, Sjoerd Simons <sjoerd@debian.org>
 Vcs-Svn: svn://anonscm.debian.org/svn/pkg-gnome/desktop/unstable/gnome-desktop3
 Vcs-Browser: http://anonscm.debian.org/viewvc/pkg-gnome/desktop/unstable/gnome-desktop3
 Standards-Version: 3.9.3

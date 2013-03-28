@@ -1,3 +1,27 @@
+gnome-desktop3 (3.8.0.1-1blankon1) suroboyo; urgency=low
+
+  * New upstream release
+
+ -- Mahyuddin Idram Ahmad <dotovr@di.blankon.in>  Thu, 28 Mar 2013 13:48:31 +0700
+
+gnome-desktop3 (3.8.0.1-1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Wed, 27 Mar 2013 19:12:14 +0100
+
+gnome-desktop3 (3.8.0-1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Wed, 27 Mar 2013 15:00:52 +0100
+
+gnome-desktop3 (3.7.92-1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Wed, 20 Mar 2013 19:48:45 +0100
+
 gnome-desktop3 (3.7.91.1-1blankon1) suroboyo; urgency=low
 
   * New upstream release
