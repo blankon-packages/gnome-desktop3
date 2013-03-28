@@ -1,4 +1,5 @@
 libgnome-desktop-3.so.7 libgnome-desktop-3-7 #MINVER#
+* Build-Depends-Package: libgnome-desktop-3-dev
  gnome_bg_changes_with_time@Base 3.2.0
  gnome_bg_create_frame_thumbnail@Base 3.2.0
  gnome_bg_create_surface@Base 3.2.0

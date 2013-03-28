@@ -1,3 +1,16 @@
+gnome-desktop3 (3.8.0.1-2blankon1) suroboyo; urgency=low
+
+  * Merge with debian experimental
+
+ -- Mahyuddin Idram Ahmad <dotovr@di.blankon.in>  Fri, 29 Mar 2013 00:31:11 +0700
+
+gnome-desktop3 (3.8.0.1-2) experimental; urgency=low
+
+  * debian/libgnome-desktop-3-7.symbols:
+    + Add Build-Depends-Package.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Thu, 28 Mar 2013 12:27:26 +0100
+
 gnome-desktop3 (3.8.0.1-1blankon1) suroboyo; urgency=low
 
   * New upstream release
