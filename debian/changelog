@@ -1,3 +1,10 @@
+gnome-desktop3 (3.10.0-0blankon1) suroboyo; urgency=low
+
+  * New upstream release
+  * debian/rules, libgnome-desktop-3-8.install: correct libexec install path  
+
+ -- Rahman Yusri Aftian <aftian@di.blankon.in>  Sat, 28 Sep 2013 18:47:25 +0700
+
 gnome-desktop3 (3.8.3-1blankon1) suroboyo; urgency=low
 
   * New upstream release 

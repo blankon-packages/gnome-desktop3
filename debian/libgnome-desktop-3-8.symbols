@@ -1,5 +1,4 @@
-libgnome-desktop-3.so.7 libgnome-desktop-3-7 #MINVER#
-* Build-Depends-Package: libgnome-desktop-3-dev
+libgnome-desktop-3.so.8 libgnome-desktop-3-8 #MINVER#
  gnome_bg_changes_with_time@Base 3.2.0
  gnome_bg_create_frame_thumbnail@Base 3.2.0
  gnome_bg_create_surface@Base 3.2.0
@@ -13,6 +12,7 @@ libgnome-desktop-3.so.7 libgnome-desktop-3-7 #MINVER#
  gnome_bg_crossfade_stop@Base 3.2.0
  gnome_bg_draw@Base 3.2.0
  gnome_bg_get_color@Base 3.2.0
+ gnome_bg_get_draw_background@Base 3.2.0
  gnome_bg_get_filename@Base 3.2.0
  gnome_bg_get_image_size@Base 3.2.0
  gnome_bg_get_placement@Base 3.2.0
@@ -24,6 +24,7 @@ libgnome-desktop-3.so.7 libgnome-desktop-3-7 #MINVER#
  gnome_bg_new@Base 3.2.0
  gnome_bg_save_to_preferences@Base 3.2.0
  gnome_bg_set_color@Base 3.2.0
+ gnome_bg_set_draw_background@Base 3.2.0
  gnome_bg_set_filename@Base 3.2.0
  gnome_bg_set_placement@Base 3.2.0
  gnome_bg_set_surface_as_root@Base 3.2.0
@@ -51,6 +52,7 @@ libgnome-desktop-3.so.7 libgnome-desktop-3-7 #MINVER#
  gnome_desktop_thumbnail_md5@Base 3.2.0
  gnome_desktop_thumbnail_path_for_uri@Base 3.2.0
  gnome_desktop_thumbnail_scale_down_pixbuf@Base 3.2.0
+ gnome_get_all_languages@Base 3.8.2-0ubuntu1
  gnome_get_all_locales@Base 3.7.90
  gnome_get_country_from_code@Base 3.7.90
  gnome_get_country_from_locale@Base 3.7.90
@@ -71,22 +73,17 @@ libgnome-desktop-3.so.7 libgnome-desktop-3-7 #MINVER#
  gnome_pnp_ids_get_type@Base 3.4.0
  gnome_pnp_ids_new@Base 3.4.0
  gnome_rr_config_applicable@Base 3.7.3
- gnome_rr_config_apply_from_filename_with_time@Base 3.7.3
- gnome_rr_config_apply_with_time@Base 3.7.3
+ gnome_rr_config_apply@Base 3.9.90
+ gnome_rr_config_apply_persistent@Base 3.9.90
  gnome_rr_config_ensure_primary@Base 3.7.3
  gnome_rr_config_equal@Base 3.7.3
- gnome_rr_config_get_backup_filename@Base 3.7.3
  gnome_rr_config_get_clone@Base 3.7.3
- gnome_rr_config_get_intended_filename@Base 3.7.3
  gnome_rr_config_get_outputs@Base 3.7.3
  gnome_rr_config_get_type@Base 3.7.3
  gnome_rr_config_load_current@Base 3.7.3
- gnome_rr_config_load_filename@Base 3.7.3
  gnome_rr_config_match@Base 3.7.3
  gnome_rr_config_new_current@Base 3.7.3
- gnome_rr_config_new_stored@Base 3.7.3
  gnome_rr_config_sanitize@Base 3.7.3
- gnome_rr_config_save@Base 3.7.3
  gnome_rr_config_set_clone@Base 3.7.3
  gnome_rr_crtc_can_drive_output@Base 3.7.3
  gnome_rr_crtc_get_current_mode@Base 3.7.3
@@ -96,7 +93,6 @@ libgnome-desktop-3.so.7 libgnome-desktop-3-7 #MINVER#
  gnome_rr_crtc_get_position@Base 3.7.3
  gnome_rr_crtc_get_rotations@Base 3.7.3
  gnome_rr_crtc_get_type@Base 3.7.3
- gnome_rr_crtc_set_config_with_time@Base 3.7.3
  gnome_rr_crtc_set_gamma@Base 3.7.3
  gnome_rr_crtc_supports_rotation@Base 3.7.3
  gnome_rr_error_quark@Base 3.7.3
@@ -107,22 +103,18 @@ libgnome-desktop-3.so.7 libgnome-desktop-3-7 #MINVER#
  gnome_rr_mode_get_width@Base 3.7.3
  gnome_rr_output_can_clone@Base 3.7.3
  gnome_rr_output_get_backlight@Base 3.7.3
- gnome_rr_output_get_backlight_max@Base 3.7.3
- gnome_rr_output_get_backlight_min@Base 3.7.3
- gnome_rr_output_get_connector_type@Base 3.7.3
  gnome_rr_output_get_crtc@Base 3.7.3
  gnome_rr_output_get_current_mode@Base 3.7.3
  gnome_rr_output_get_display_name@Base 3.7.90
  gnome_rr_output_get_edid_data@Base 3.7.3
- gnome_rr_output_get_height_mm@Base 3.7.3
  gnome_rr_output_get_id@Base 3.7.3
  gnome_rr_output_get_ids_from_edid@Base 3.7.3
  gnome_rr_output_get_is_primary@Base 3.7.3
  gnome_rr_output_get_name@Base 3.7.3
+ gnome_rr_output_get_physical_size@Base 3.9.90
  gnome_rr_output_get_position@Base 3.7.3
  gnome_rr_output_get_preferred_mode@Base 3.7.3
  gnome_rr_output_get_type@Base 3.7.3
- gnome_rr_output_get_width_mm@Base 3.7.3
  gnome_rr_output_info_get_aspect_ratio@Base 3.7.3
  gnome_rr_output_info_get_display_name@Base 3.7.3
  gnome_rr_output_info_get_geometry@Base 3.7.3
@@ -143,8 +135,7 @@ libgnome-desktop-3.so.7 libgnome-desktop-3-7 #MINVER#
  gnome_rr_output_info_set_primary@Base 3.7.3
  gnome_rr_output_info_set_refresh_rate@Base 3.7.3
  gnome_rr_output_info_set_rotation@Base 3.7.3
- gnome_rr_output_is_connected@Base 3.7.3
- gnome_rr_output_is_laptop@Base 3.7.3
+ gnome_rr_output_is_builtin_display@Base 3.9.0
  gnome_rr_output_list_modes@Base 3.7.3
  gnome_rr_output_set_backlight@Base 3.7.3
  gnome_rr_output_supports_mode@Base 3.7.3
@@ -153,17 +144,16 @@ libgnome-desktop-3.so.7 libgnome-desktop-3-7 #MINVER#
  gnome_rr_screen_get_output_by_id@Base 3.7.3
  gnome_rr_screen_get_output_by_name@Base 3.7.3
  gnome_rr_screen_get_ranges@Base 3.7.3
- gnome_rr_screen_get_timestamps@Base 3.7.3
  gnome_rr_screen_get_type@Base 3.7.3
  gnome_rr_screen_list_clone_modes@Base 3.7.3
  gnome_rr_screen_list_crtcs@Base 3.7.3
  gnome_rr_screen_list_modes@Base 3.7.3
  gnome_rr_screen_list_outputs@Base 3.7.3
  gnome_rr_screen_new@Base 3.7.3
+ gnome_rr_screen_new_async@Base 3.9.90
+ gnome_rr_screen_new_finish@Base 3.9.90
  gnome_rr_screen_refresh@Base 3.7.3
  gnome_rr_screen_set_dpms_mode@Base 3.7.3
- gnome_rr_screen_set_primary_output@Base 3.7.3
- gnome_rr_screen_set_size@Base 3.7.3
  gnome_wall_clock_get_clock@Base 3.2.0
  gnome_wall_clock_get_timezone@Base 3.7.90
  gnome_wall_clock_get_type@Base 3.2.0
