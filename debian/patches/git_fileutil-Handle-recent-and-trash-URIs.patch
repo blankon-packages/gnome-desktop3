@@ -1,0 +1,64 @@
+From c20b38e1197700db940d3be3805d2fbcce3e465b Mon Sep 17 00:00:00 2001
+From: Bastien Nocera <hadess@hadess.net>
+Date: Fri, 20 Sep 2013 12:59:23 +0200
+Subject: [PATCH] fileutil: Handle recent: and trash: URIs
+
+The gs_file_get_path_cached() was rather brittle in its handling
+of URIs. It would assert() when a GFile didn't have a backing path
+(such as when handling trash: or recent: URIs), and didn't know
+how to get the target URI for those items either.
+
+Make sure that we do not assert() when a backing path cannot be
+found, and handle recent: and trash: URIs.
+
+https://bugzilla.gnome.org/show_bug.cgi?id=708435
+---
+ gsystem-file-utils.c | 26 ++++++++++++++++++++++++--
+ 1 file changed, 24 insertions(+), 2 deletions(-)
+
+diff --git a/gsystem-file-utils.c b/gsystem-file-utils.c
+index 18b7bc1..7894aee 100644
+--- a/libgnome-desktop/libgsystem/gsystem-file-utils.c
++++ b/libgnome-desktop/libgsystem/gsystem-file-utils.c
+@@ -762,6 +762,23 @@ gs_file_linkcopy_sync_data (GFile          *src,
+   return linkcopy_internal (src, dest, flags, TRUE, cancellable, error);
+ }
+ 
++static char *
++gs_file_get_target_path (GFile *file)
++{
++  GFileInfo *info;
++  const char *target;
++  char *path;
++
++  info = g_file_query_info (file, G_FILE_ATTRIBUTE_STANDARD_TARGET_URI, G_FILE_QUERY_INFO_NONE, NULL, NULL);
++  if (info == NULL)
++    return NULL;
++  target = g_file_info_get_attribute_string (info, G_FILE_ATTRIBUTE_STANDARD_TARGET_URI);
++  path = g_filename_from_uri (target, NULL, NULL);
++  g_object_unref (info);
++
++  return path;
++}
++
+ G_LOCK_DEFINE_STATIC (pathname_cache);
+ 
+ /**
+@@ -784,8 +801,13 @@ gs_file_get_path_cached (GFile *file)
+   path = g_object_get_qdata ((GObject*)file, _file_path_quark);
+   if (!path)
+     {
+-      path = g_file_get_path (file);
+-      g_assert (path != NULL);
++      if (g_file_has_uri_scheme (file, "trash") ||
++          g_file_has_uri_scheme (file, "recent"))
++        path = gs_file_get_target_path (file);
++      else
++        path = g_file_get_path (file);
++      if (path == NULL)
++        return NULL;
+       g_object_set_qdata_full ((GObject*)file, _file_path_quark, (char*)path, (GDestroyNotify)g_free);
+     }
+ 
+-- 
+1.8.3.1
