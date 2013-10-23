@@ -12,7 +12,6 @@ libgnome-desktop-3.so.8 libgnome-desktop-3-8 #MINVER#
  gnome_bg_crossfade_stop@Base 3.2.0
  gnome_bg_draw@Base 3.2.0
  gnome_bg_get_color@Base 3.2.0
- gnome_bg_get_draw_background@Base 3.2.0
  gnome_bg_get_filename@Base 3.2.0
  gnome_bg_get_image_size@Base 3.2.0
  gnome_bg_get_placement@Base 3.2.0
@@ -24,7 +23,6 @@ libgnome-desktop-3.so.8 libgnome-desktop-3-8 #MINVER#
  gnome_bg_new@Base 3.2.0
  gnome_bg_save_to_preferences@Base 3.2.0
  gnome_bg_set_color@Base 3.2.0
- gnome_bg_set_draw_background@Base 3.2.0
  gnome_bg_set_filename@Base 3.2.0
  gnome_bg_set_placement@Base 3.2.0
  gnome_bg_set_surface_as_root@Base 3.2.0
@@ -52,7 +50,6 @@ libgnome-desktop-3.so.8 libgnome-desktop-3-8 #MINVER#
  gnome_desktop_thumbnail_md5@Base 3.2.0
  gnome_desktop_thumbnail_path_for_uri@Base 3.2.0
  gnome_desktop_thumbnail_scale_down_pixbuf@Base 3.2.0
- gnome_get_all_languages@Base 3.8.2-0ubuntu1
  gnome_get_all_locales@Base 3.7.90
  gnome_get_country_from_code@Base 3.7.90
  gnome_get_country_from_locale@Base 3.7.90

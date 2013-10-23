@@ -1,3 +1,14 @@
+gnome-desktop3 (3.10.1-1blankon1) suroboyo; urgency=low
+
+  [ Sjoerd Simons ]
+  * New upstream release
+  * Sync with Ubuntu, bumped soname
+
+  [ Mahyuddin Idram Ahmad ]
+  * New upstream release
+
+ -- Mahyuddin Idram Ahmad <dotovr@di.blankon.in>  Wed, 23 Oct 2013 21:22:22 +0700
+
 gnome-desktop3 (3.10.0-0blankon2) suroboyo; urgency=low
 
   * debian/control libgnome-desktop-3-7 to libgnome-desktop-3-8
@@ -10,6 +21,24 @@ gnome-desktop3 (3.10.0-0blankon1) suroboyo; urgency=low
   * debian/rules, libgnome-desktop-3-8.install: correct libexec install path  
 
  -- Rahman Yusri Aftian <aftian@di.blankon.in>  Sat, 28 Sep 2013 18:47:25 +0700
+
+gnome-desktop3 (3.8.4-2) unstable; urgency=low
+
+  * Upload to unstable.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Sun, 13 Oct 2013 17:26:27 +0200
+
+gnome-desktop3 (3.8.4-1) experimental; urgency=low
+
+  [ Jeremy Bicha ]
+  * Remove obsolete build dependency on gnome-doc-utils.
+
+  [ Laurent Bigonville ]
+  * New upstream release.
+    - Prevent a crash with unknown language/country codes (Closes: #692453)
+  * debian/control.in: Bump Standards-Version to 3.9.4 (no further changes)
+
+ -- Laurent Bigonville <bigon@debian.org>  Wed, 04 Sep 2013 20:16:36 +0200
 
 gnome-desktop3 (3.8.3-1blankon1) suroboyo; urgency=low
 
