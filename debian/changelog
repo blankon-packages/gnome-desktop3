@@ -6,6 +6,7 @@ gnome-desktop3 (3.10.1-1blankon1) suroboyo; urgency=low
 
   [ Mahyuddin Idram Ahmad ]
   * New upstream release
+  * debian/libgnome-desktop-3-8.symbols add new symbols
 
  -- Mahyuddin Idram Ahmad <dotovr@di.blankon.in>  Wed, 23 Oct 2013 21:22:22 +0700
 
