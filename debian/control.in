@@ -1,8 +1,7 @@
 Source: gnome-desktop3
 Section: gnome
 Priority: optional
-Maintainer: BlankOn Developers <BlankOn-dev@googlegroups.com>
-XSBC-Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
 Uploaders: @GNOME_TEAM@
 Vcs-Svn: svn://anonscm.debian.org/pkg-gnome/desktop/unstable/gnome-desktop3
 Vcs-Browser: http://anonscm.debian.org/viewvc/pkg-gnome/desktop/unstable/gnome-desktop3
@@ -51,7 +50,8 @@ Depends: ${misc:Depends},
          gnome-desktop3-data (>= ${source:Version})
 Replaces: libgnome-desktop-3-2 (<< 3.5.2),
           libgnome-desktop-3-4 (<< 3.7.90),
-          libgnome-desktop-3-7 (<< 3.9.91),
+          libgnome-desktop-3-7 (<< 3.9.91)
+Breaks: libgnome-desktop-3-7
 Recommends: hwdata (>= 0.227-1)
 Description: Utility library for loading .desktop files - runtime files
  This library is used by GNOME to load the .desktop files.

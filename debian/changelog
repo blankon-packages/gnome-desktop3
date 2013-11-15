@@ -1,3 +1,17 @@
+gnome-desktop3 (3.10.1-2blankon1) suroboyo; urgency=low
+
+  * New upstream release
+
+ -- Mahyuddin Idram Ahmad <dotovr@di.blankon.in>  Fri, 15 Nov 2013 17:34:14 +0700
+
+gnome-desktop3 (3.10.1-2) experimental; urgency=low
+
+  * Make libgnome-desktop-3-8 break libgnome-desktop-3-7. Mixing both on one
+    system is a recipe for disaster when using gnome-desktop via
+    gobject-introspection.
+
+ -- Sjoerd Simons <sjoerd@debian.org>  Sun, 03 Nov 2013 11:11:35 +0100
+
 gnome-desktop3 (3.10.1-1blankon1) suroboyo; urgency=low
 
   [ Sjoerd Simons ]
