@@ -49,7 +49,6 @@ Depends: ${misc:Depends},
          ${shlibs:Depends},
          gsettings-desktop-schemas (>= 3.5.91),
          gnome-desktop3-data (>= ${source:Version})
-Conflicts: libgnome-desktop-3-7
 Replaces: libgnome-desktop-3-2 (<< 3.5.2),
           libgnome-desktop-3-4 (<< 3.7.90),
           libgnome-desktop-3-7
