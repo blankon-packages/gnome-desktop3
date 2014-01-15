@@ -54,10 +54,11 @@ Depends: ${misc:Depends},
          ${shlibs:Depends},
          gsettings-desktop-schemas (>= 3.5.91),
          gnome-desktop3-data (>= ${source:Version})
+Conflicts: libgnome-desktop-3-7
 Replaces: libgnome-desktop-3-2 (<< 3.5.2),
           libgnome-desktop-3-4 (<< 3.7.90),
           libgnome-desktop-3-7
-Breaks: libgnome-desktop-3-7
+#Breaks: libgnome-desktop-3-7
 Recommends: hwdata (>= 0.227-1)
 Description: Utility library for loading .desktop files - runtime files
  This library is used by GNOME to load the .desktop files.
