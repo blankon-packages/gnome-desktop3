@@ -1,3 +1,9 @@
+gnome-desktop3 (3.10.2-0blankon4) suroboyo; urgency=low
+
+  * control.in: Make refresh libgnome-desktop-3-7 (<< 3.8.4)
+
+ -- Mahyuddin Ramli <yudi.al@gmail.com>  Sat, 01 Feb 2014 16:55:52 +0700
+
 gnome-desktop3 (3.10.2-0blankon3) suroboyo; urgency=low
 
   * Drop conlicts
