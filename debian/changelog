@@ -1,38 +1,19 @@
-gnome-desktop3 (3.10.2-0blankon5) tambora; urgency=low
-
-  * Upload to tambora 
-
- -- Rahman Yusri Aftian <aftian@di.blankon.in>  Mon, 03 Mar 2014 22:42:08 +0700
-
-gnome-desktop3 (3.10.2-0blankon4) suroboyo; urgency=low
-
-  * control.in: Make refresh libgnome-desktop-3-7 (<< 3.8.4)
-
- -- Mahyuddin Ramli <yudi.al@gmail.com>  Sat, 01 Feb 2014 16:55:52 +0700
-
-gnome-desktop3 (3.10.2-0blankon3) suroboyo; urgency=low
-
-  * Drop conlicts
-
- -- Mahyuddin Ramli <yudi.al@gmail.com>  Thu, 16 Jan 2014 00:04:34 +0700
-
-gnome-desktop3 (3.10.2-0blankon2) suroboyo; urgency=low
-
-  * Make Conflicts: libgnome-desktop-3-7
-
- -- Mahyuddin Ramli <yudi.al@gmail.com>  Wed, 15 Jan 2014 23:15:27 +0700
-
-gnome-desktop3 (3.10.2-0blankon1) suroboyo; urgency=low
+gnome-desktop3 (3.11.91-0blankon1) tambora; urgency=low
 
   * New upstream release
 
- -- Mahyuddin Ramli <yudi.al@gmail.com>  Wed, 15 Jan 2014 21:56:07 +0700
+ -- Mahyuddin Idram Ahmad <dotovr@di.blankon.in>  Sun, 23 Mar 2014 09:52:06 +0700
 
-gnome-desktop3 (3.10.1-2blankon1) suroboyo; urgency=low
+gnome-desktop3 (3.11.90-1) experimental; urgency=medium
 
-  * New upstream release
+  * New upstream release.
+  * Rename packages to match new soname.
+  * Drop build-dependency on libxkbfile-dev, not needed anymore.
+  * Update symbols file for new soname.
+  * Drop empty debian/patches/
+  * Break libgnome-desktop-3-8 for the same reason as libgnome-desktop-3-7.
 
- -- Mahyuddin Idram Ahmad <dotovr@di.blankon.in>  Fri, 15 Nov 2013 17:34:14 +0700
+ -- Andreas Henriksson <andreas@fatal.se>  Tue, 18 Feb 2014 20:27:37 +0100
 
 gnome-desktop3 (3.10.1-2) experimental; urgency=low
 
@@ -42,30 +23,12 @@ gnome-desktop3 (3.10.1-2) experimental; urgency=low
 
  -- Sjoerd Simons <sjoerd@debian.org>  Sun, 03 Nov 2013 11:11:35 +0100
 
-gnome-desktop3 (3.10.1-1blankon1) suroboyo; urgency=low
+gnome-desktop3 (3.10.1-1) experimental; urgency=low
 
-  [ Sjoerd Simons ]
   * New upstream release
   * Sync with Ubuntu, bumped soname
 
-  [ Mahyuddin Idram Ahmad ]
-  * New upstream release
-  * debian/libgnome-desktop-3-8.symbols add new symbols
-
- -- Mahyuddin Idram Ahmad <dotovr@di.blankon.in>  Wed, 23 Oct 2013 21:22:22 +0700
-
-gnome-desktop3 (3.10.0-0blankon2) suroboyo; urgency=low
-
-  * debian/control libgnome-desktop-3-7 to libgnome-desktop-3-8
-
- -- Rahman Yusri Aftian <aftian@di.blankon.in>  Sat, 28 Sep 2013 18:55:34 +0700
-
-gnome-desktop3 (3.10.0-0blankon1) suroboyo; urgency=low
-
-  * New upstream release
-  * debian/rules, libgnome-desktop-3-8.install: correct libexec install path  
-
- -- Rahman Yusri Aftian <aftian@di.blankon.in>  Sat, 28 Sep 2013 18:47:25 +0700
+ -- Sjoerd Simons <sjoerd@debian.org>  Fri, 01 Nov 2013 22:45:28 +0100
 
 gnome-desktop3 (3.8.4-2) unstable; urgency=low
 
@@ -85,12 +48,6 @@ gnome-desktop3 (3.8.4-1) experimental; urgency=low
 
  -- Laurent Bigonville <bigon@debian.org>  Wed, 04 Sep 2013 20:16:36 +0200
 
-gnome-desktop3 (3.8.3-1blankon1) suroboyo; urgency=low
-
-  * New upstream release 
-
- -- Mahyuddin Idram Ahmad <dotovr@di.blankon.in>  Sun, 09 Jun 2013 13:23:08 +0700
-
 gnome-desktop3 (3.8.3-1) experimental; urgency=low
 
   * Remove obsolete build dependency on scrollkeeper.
@@ -98,30 +55,12 @@ gnome-desktop3 (3.8.3-1) experimental; urgency=low
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Sat, 08 Jun 2013 18:21:56 +0200
 
-gnome-desktop3 (3.8.0.1-2blankon2) suroboyo; urgency=low
-
-  * Refresh tag
-
- -- Mahyuddin Idram Ahmad <dotovr@di.blankon.in>  Fri, 29 Mar 2013 01:05:09 +0700
-
-gnome-desktop3 (3.8.0.1-2blankon1) suroboyo; urgency=low
-
-  * Merge with debian experimental
-
- -- Mahyuddin Idram Ahmad <dotovr@di.blankon.in>  Fri, 29 Mar 2013 00:31:11 +0700
-
 gnome-desktop3 (3.8.0.1-2) experimental; urgency=low
 
   * debian/libgnome-desktop-3-7.symbols:
     + Add Build-Depends-Package.
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Thu, 28 Mar 2013 12:27:26 +0100
-
-gnome-desktop3 (3.8.0.1-1blankon1) suroboyo; urgency=low
-
-  * New upstream release
-
- -- Mahyuddin Idram Ahmad <dotovr@di.blankon.in>  Thu, 28 Mar 2013 13:48:31 +0700
 
 gnome-desktop3 (3.8.0.1-1) experimental; urgency=low
 
@@ -140,12 +79,6 @@ gnome-desktop3 (3.7.92-1) experimental; urgency=low
   * New upstream release.
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Wed, 20 Mar 2013 19:48:45 +0100
-
-gnome-desktop3 (3.7.91.1-1blankon1) suroboyo; urgency=low
-
-  * New upstream release
-
- -- Mahyuddin Idram Ahmad <dotovr@di.blankon.in>  Wed, 20 Mar 2013 16:11:29 +0700
 
 gnome-desktop3 (3.7.91.1-1) experimental; urgency=low
 
@@ -168,12 +101,6 @@ gnome-desktop3 (3.7.91.1-1) experimental; urgency=low
 
  -- Sjoerd Simons <sjoerd@debian.org>  Mon, 18 Mar 2013 20:44:24 +0100
 
-gnome-desktop3 (3.6.1-1blankon1) suroboyo; urgency=low
-
-  * Upload to suroboyo 
-
- -- Rahman Yusri Aftian <aftian@di.blankon.in>  Mon, 04 Mar 2013 07:16:08 +0000
-
 gnome-desktop3 (3.6.1-1) experimental; urgency=low
 
   * debian/control.in: Temporarily loosen the depend on the data package so the
@@ -192,6 +119,30 @@ gnome-desktop3 (3.6.0.1-1) experimental; urgency=low
   * Soname bumped to 4
 
  -- Sjoerd Simons <sjoerd@debian.org>  Sun, 14 Oct 2012 18:51:51 +0200
+
+gnome-desktop3 (3.4.2-2) unstable; urgency=low
+
+  * Team upload.
+
+  [ Josselin Mouette ]
+  * Add missing epoch on libxrandr build-dependency.
+
+  [ Emilio Pozuelo Monfort ]
+  * debian/control.in:
+    + Loosen libgnome-desktop-3-2 dependency on gnome-desktop3-data
+      so that the former can be coinstalled with other sonames of
+      the library. Closes: #704177.
+
+  [ Simon McVittie ]
+  * Add patch from upstream 3.5.3 to sync thumbnail location with GLib
+    2.34+ (~/.cache/thumbnails instead of ~/.thumbnails), preventing
+    infinite loops in which Nautilus will generate thumbnails of thumbnails.
+    Closes: #708185.
+    + Explicitly (build-)depend on GLib 2.34+ to make sure the system is
+      consistent
+    + Thumbnails are now in a well-known cache directory (Closes: #637049)
+
+ -- Simon McVittie <smcv@debian.org>  Wed, 15 May 2013 09:01:28 +0100
 
 gnome-desktop3 (3.4.2-1) unstable; urgency=low
 
