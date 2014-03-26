@@ -1,8 +1,15 @@
-gnome-desktop3 (3.11.91-0blankon1) tambora; urgency=low
+gnome-desktop3 (3.12.0-1blankon1) tambora; urgency=low
 
   * New upstream release
+  * Make Replaces libgnome-desktop-3-8
 
- -- Mahyuddin Idram Ahmad <dotovr@di.blankon.in>  Sun, 23 Mar 2014 09:52:06 +0700
+ -- Mahyuddin Idram Ahmad <dotovr@di.blankon.in>  Wed, 26 Mar 2014 23:27:29 +0700
+
+gnome-desktop3 (3.12.0-1) experimental; urgency=medium
+
+  * New upstream release.
+
+ -- Andreas Henriksson <andreas@fatal.se>  Mon, 24 Mar 2014 20:02:56 +0100
 
 gnome-desktop3 (3.11.90-1) experimental; urgency=medium
 
