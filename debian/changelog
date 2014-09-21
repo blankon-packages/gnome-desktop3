@@ -1,21 +1,40 @@
-gnome-desktop3 (3.12.0-1blankon3) tambora; urgency=low
+gnome-desktop3 (3.13.91-1blankon1) tambora; urgency=low
 
-  * debian/control.in: Drop Breaks & Replaces libgnome-desktop-3-8
+  * Merge with Debian Experimental
 
- -- Mahyuddin Ramli <yudi.al@gmail.com>  Fri, 28 Mar 2014 23:03:55 +0700
+ -- Mahyuddin <yudi.al@gmail.com>  Sun, 21 Sep 2014 15:21:14 +0700
 
-gnome-desktop3 (3.12.0-1blankon2) tambora; urgency=low
+gnome-desktop3 (3.13.91-1) experimental; urgency=medium
 
-  * debian/control.in: Make Replaces libgnome-desktop-3-7 libgnome-desktop-3-8
+  * New upstream development release.
+  * debian/libgnome-desktop-3-10.symbols:
+    Add new symbol gnome_wall_clock_string_for_datetime@Base 3.13.91
 
- -- Mahyuddin Ramli <yudi.al@gmail.com>  Fri, 28 Mar 2014 00:19:04 +0700
+ -- Andreas Henriksson <andreas@fatal.se>  Sat, 06 Sep 2014 05:54:46 -0700
 
-gnome-desktop3 (3.12.0-1blankon1) tambora; urgency=low
+gnome-desktop3 (3.12.2-2) unstable; urgency=medium
 
-  * New upstream release
-  * Make Replaces libgnome-desktop-3-8
+  * Add debian/patches/realpath-PATH_MAX.patch (from upstream libgsystem)
+    - avoids PATH_MAX to hopefully fix FTBFS on Hurd.
 
- -- Mahyuddin Idram Ahmad <dotovr@di.blankon.in>  Wed, 26 Mar 2014 23:27:29 +0700
+ -- Andreas Henriksson <andreas@fatal.se>  Tue, 15 Jul 2014 23:49:32 +0200
+
+gnome-desktop3 (3.12.2-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump Standards-Version to 3.9.5
+  * Upload to unstable.
+
+ -- Andreas Henriksson <andreas@fatal.se>  Mon, 14 Jul 2014 23:13:58 +0200
+
+gnome-desktop3 (3.12.1-1) experimental; urgency=medium
+
+  * Drop conflicts against libgnome-desktop-3-7 because it is not 
+    necessary: only leaf packages in G3.8 use gnome-desktop, including 
+    gnome-shell that does work with the new g-desktop library.
+  * New upstream bugfix release.
+
+ -- Josselin Mouette <joss@debian.org>  Sat, 26 Apr 2014 14:09:27 +0200
 
 gnome-desktop3 (3.12.0-1) experimental; urgency=medium
 
@@ -2102,4 +2121,3 @@ gnome-core (0.13-1) unstable; urgency=low
   * Initial Release.
 
  -- Jim Pick <jim@jimpick.com>  Mon, 16 Mar 1998 15:27:43 -0800
-
