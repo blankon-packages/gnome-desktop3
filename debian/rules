@@ -13,7 +13,7 @@ LDFLAGS += -Wl,-z,defs -Wl,-O1 -Wl,--as-needed
 
 DEB_DH_AUTORECONF_ARGS = --as-needed
 
-LIB_PKG := libgnome-desktop-3-10
+LIB_PKG := libgnome-desktop-3-12
 
 DEB_CONFIGURE_LIBEXECDIR := \$${prefix}/lib/$(DEB_HOST_MULTIARCH)/$(LIB_PKG)
 
