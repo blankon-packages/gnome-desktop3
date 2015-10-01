@@ -13,16 +13,18 @@ LDFLAGS += -Wl,-z,defs -Wl,-O1 -Wl,--as-needed
 
 DEB_DH_AUTORECONF_ARGS = --as-needed
 
-DEB_CONFIGURE_LIBEXECDIR := /usr/lib/libgnome-desktop-3-10/
+LIB_PKG := libgnome-desktop-3-10
+
+DEB_CONFIGURE_LIBEXECDIR := \$${prefix}/lib/$(DEB_HOST_MULTIARCH)/$(LIB_PKG)
 
 DEB_CONFIGURE_EXTRA_FLAGS += \
+			--libdir=\$${prefix}/lib/$(DEB_HOST_MULTIARCH) \
 			--with-gnome-distributor=$(shell dpkg-vendor --query vendor) \
 			--with-pnp-ids-path=/usr/share/hwdata/pnp.ids \
-			--disable-scrollkeeper \
 			--enable-gtk-doc \
 			--enable-desktop-docs \
 			--enable-introspection
 
-DEB_DH_MAKESHLIBS_ARGS_libgnome-desktop-3-10 += -- -c4
+DEB_DH_MAKESHLIBS_ARGS_$(LIB_PKG) += -- -c4
 
 common-binary-post-install-arch:: list-missing

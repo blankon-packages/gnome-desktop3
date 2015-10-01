@@ -1,8 +1,56 @@
-gnome-desktop3 (3.13.91-1blankon1) tambora; urgency=low
+gnome-desktop3 (3.18.0-0blankon1) tambora; urgency=medium
 
-  * Merge with Debian Experimental
+  [ Andreas Henriksson ]
+  * New upstream release candidante.
+  * Rename libgnome-desktop-3-10 package to libgnome-desktop-3-12.
+  * Update libgnome-desktop-3-12.symbols
 
- -- Mahyuddin <yudi.al@gmail.com>  Sun, 21 Sep 2014 15:21:14 +0700
+  [ mhy ]
+  * New upstream release
+  * Bump version libglib2.0-dev (>= 2.45.0)
+
+ -- mhy <dotovr@mhy>  Thu, 01 Oct 2015 11:50:45 +0700
+
+gnome-desktop3 (3.16.2-2) unstable; urgency=medium
+
+  * Add missing trailing slash to DEB_CONFIGURE_EXTRA_FLAGS arguments.
+
+ -- Michael Biebl <biebl@debian.org>  Sat, 30 May 2015 01:46:21 +0200
+
+gnome-desktop3 (3.16.2-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Remove debian/patches/realpath-PATH_MAX.patch, upstream dropped the
+    libgsystem dependency.
+  * Drop obsolete Breaks/Replaces from pre-wheezy.
+  * Drop explicit Build-Depends on dpkg-dev, even the version from wheezy
+    provides dpkg-vendor.
+  * Convert to multiarch. This includes moving the gnome-rr-debug tool into an
+    architecture qualified path.
+  * Bump debhelper compatibility level to 9.
+  * Bump Standards-Version to 3.9.6.
+  * Update debian/copyright. Change shortname from 'MIT/X11 (BSD like)' to
+    Expat to comply with the spec.
+
+ -- Michael Biebl <biebl@debian.org>  Tue, 26 May 2015 02:13:04 +0200
+
+gnome-desktop3 (3.14.1-1) unstable; urgency=medium
+
+  [ Tim Lunn ]
+  * debian/rules: Drop obsolete scrollkeeper configure flag
+
+  [ Sjoerd Simons ]
+  * New upstream release
+
+ -- Sjoerd Simons <sjoerd@debian.org>  Sun, 19 Oct 2014 17:10:20 +0200
+
+gnome-desktop3 (3.14.0-1) unstable; urgency=medium
+
+  * debian/watch: only search for stable releases.
+  * New upstream release.
+  * Upload to unstable.
+
+ -- Andreas Henriksson <andreas@fatal.se>  Tue, 23 Sep 2014 00:10:19 +0200
 
 gnome-desktop3 (3.13.91-1) experimental; urgency=medium
 
