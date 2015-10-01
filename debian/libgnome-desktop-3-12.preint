@@ -1,8 +1,0 @@
-pkg=libgnome-desktop-3-12
-
-if [ upgrade != "$1" ] || dpkg --compare-versions "$2" lt 3.18.0-0blankon2; then
-    dpkg-divert --divert /usr/lib/x86_64-linux-gnu/libgnome-desktop-3-10/gnome-rr-debug.divert --package "$pkg" --rename --add /usr/lib/x86_64-linux-gnu/libgnome-desktop-3-10/gnome-rr-debug
-fi
-
-#DEBHELPER#
-
