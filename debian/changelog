@@ -1,3 +1,9 @@
+gnome-desktop3 (3.18.0-0blankon2) tambora; urgency=medium
+
+  * Added debian/libgnome-desktop-3-12.pre* to handle package overwrite 
+
+ -- mhy <dotovr@mhy>  Thu, 01 Oct 2015 13:28:26 +0700
+
 gnome-desktop3 (3.18.0-0blankon1) tambora; urgency=medium
 
   [ Andreas Henriksson ]
